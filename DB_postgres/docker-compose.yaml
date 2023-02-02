@@ -1,0 +1,18 @@
+version: '1/0'
+
+services:
+  db:
+    image: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: todo
+      POSTGRES_PASSWORD: 123456qwerty
+      POSTGRES_DB: todolist_db
+    restart: always
+    ports:
+    - "5432:5432"
+
+
+volumes:
+  postgres_data:
