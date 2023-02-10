@@ -1,5 +1,13 @@
-название + описание проекта
+Проект todolist
 
-стек (python3.9, Django, Postgres)
+Описание: Календарь с шеринг досками
 
-как запустить (установить зависимости, заполнить .env + какими значениями, накатить миграции, запустить проект)
+Python-3.10
+Django-4.1.5
+Postgres-15
+
+БД:
+В папке DB_postgres запускаем docker_compose, устанавливаем BD postgres
+      POSTGRES_USER: todo
+      POSTGRES_PASSWORD: 123456qwerty
+      POSTGRES_DB: todolist_db
