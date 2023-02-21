@@ -14,3 +14,4 @@ cp .env_example .env
 В папке DB_postgres запускаем docker_compose, устанавливаем BD postgres
 Данные по умрлчаеию в файле .env
 
+image: sermalenk/skypro-front:lesson-34

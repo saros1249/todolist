@@ -1,4 +1,4 @@
-version: '1/0'
+version: '1.0'
 
 services:
   db:
@@ -9,9 +9,12 @@ services:
       POSTGRES_USER: todo
       POSTGRES_PASSWORD: 123456qwerty
       POSTGRES_DB: todolist_db
+    command: ["postgres", "-c", "log_statement=all", "-c", "log_destination=stderr"]
     restart: always
     ports:
     - "5432:5432"
+
+
 
 
 volumes:
