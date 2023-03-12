@@ -11,5 +11,5 @@ jobs:
       - name: docker login
         run: echo ${{ secrets.DOCKERHUB_TOKEN }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
       - name: docker push
-        run: docker push sermalenk/flask-app:$GITHUB_REF_NAME-$GITHUB_RUN_ID
+        run: docker push saros1249/todolist:$GITHUB_REF_NAME-$GITHUB_RUN_ID
         
